@@ -1,4 +1,4 @@
-"""Practice for numeric operators, type conversion, and string concatenation"""
+"""Practice for numeric operators, type conversion, and string concatenation."""
 
 __author__ = "730466197"
 
