@@ -16,13 +16,16 @@ from random import randint
 quote: str = ""
 
 print("Your fortune cookie says...")
-integer: int = randint(1, 3)
+integer: int = randint(1, 4)
 if integer == 1:
     quote = "You will soon find love."
 else:
     if integer == 2:
         quote = "You will have a blessed evening."
     else:
-        qoute = "Great riches will find you in the future."
+        if integer == 3:
+            quote = "Great riches will find you in the future."
+        else:
+            quote = "Your fated one will soon call you."
 print(quote)
 print("Now, go spread positive vibes!")
