@@ -1,6 +1,7 @@
 """List utility functions."""
 
-__author__ = "123456789"
+__author__ = "730466197"
 
 
-# TODO: Implement your functions here.
+def all(x:list[int], y:int) -> bool:
+    while i < len.x:
