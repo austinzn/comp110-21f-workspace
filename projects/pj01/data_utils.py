@@ -93,3 +93,30 @@ def count(list: list[str]) -> dict[str, int]:
             result[list[i]] = 1
         i += 1
     return result
+
+
+def high(list: list[str]) -> int:
+    """Return the number of people who responded 6 or higher."""
+    number: int = 0
+    for num in list:
+        if int(num) > 5:
+            number += 1
+    return number
+
+
+def average(list: list[str]) -> int:
+    """Return the number of people who had responded between 2 and 6."""
+    number: int = 0
+    for num in list:
+        if int(num) > 2 and int(num) < 6:
+            number += 1
+    return number
+
+
+def low(list: list[str]) -> int:
+    """Return the number of people who had responded below 3."""
+    number: int = 0
+    for num in list:
+        if int(num) < 3:
+            number += 1
+    return number
