@@ -51,6 +51,10 @@ def head(table: dict[str, list[str]], n: int) -> dict[str, list[str]]:
     i: int = 0 
     for key in table:
         values: list[str] = []
+        if n == 0:
+            result[key] = values
+        if n > len(table[key]):
+            n = len(table[key])
         while i < n:
             values.append(table[key][i])
             result[key] = values
